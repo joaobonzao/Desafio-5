@@ -1,0 +1,26 @@
+package javaapplication101;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class JavaApplication101 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        DecimalFormat decimal = new DecimalFormat("0.00");
+        //Declarando variáveis
+        int numeros;
+        //Entrada de dados
+        numeros = 1000;
+        //Repetição - Processamento - Saída de dados
+        while (numeros <= 1999) {
+            if (numeros % 11 == 5) {
+                System.out.println("numero: " + numeros);
+            }
+            numeros++;
+        }
+
+    }
+
+}
+
