@@ -1,0 +1,39 @@
+package javaapplication101;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class JavaApplication101 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        DecimalFormat decimal = new DecimalFormat("0.00");
+       //Declarando variáveis
+        int contador,  numero, par, impar, nulo;               
+       //Entrada de dados
+        contador = 0; 
+        par = 0;
+        impar = 0;
+        nulo = 0;
+        //Repetição - Processamento
+        while(contador <30){
+            System.out.println("Digite o número");
+            numero = ler.nextInt();
+            if (numero == 0) {
+                nulo++;
+            } else if (numero % 2 == 0) {
+                par++;
+            } else {
+                impar++;
+            }
+             contador++;
+
+        }
+        //Saída de dados
+        System.out.println("Resultados:");
+        System.out.println("Pares: " + par);
+        System.out.println("Ímpares: " + impar);
+        System.out.println("Nulos (zero): " + nulo);
+    }
+
+}
