@@ -17,11 +17,11 @@ public class JavaApplication101 {
         intervalo4 = 0;
         numero = 0;
        
-        //Repetição - Processamento
-        while (numero >=0){
+       //Repetição - Processamento
+        while (numero >= 0) {
             System.out.println("insira um número (digite um numero negativo para encerrar.):  ");
             numero = ler.nextInt();
-              if (numero >= 0 && numero <= 25) {
+            if (numero >= 0 && numero <= 25) {
                 intervalo1++;
             } else if (numero >= 26 && numero <= 50) {
                 intervalo2++;
@@ -29,14 +29,17 @@ public class JavaApplication101 {
                 intervalo3++;
             } else if (numero >= 76 && numero <= 100) {
                 intervalo4++;
+            }else if(numero >100){
+                fora++;
             }
         }
-        
+
         //Saída de dados
         System.out.println("Resultados:");
         System.out.println("[0 - 25]: " + intervalo1 + " números");
         System.out.println("[26 - 50]: " + intervalo2 + " números");
         System.out.println("[51 - 75]: " + intervalo3 + " números");
         System.out.println("[76 - 100]: " + intervalo4 + " números");
+        System.out.println("Fora do padrão: " + fora);
     }
 }
